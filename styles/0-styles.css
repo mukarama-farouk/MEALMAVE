@@ -1,0 +1,371 @@
+:root {
+    --color-white: #ffff;
+    --color-black: #090909;
+    --text-color: var(--color-black);
+    --color-primary: rgb(13, 110, 13);
+    --color-orange: rgb(206, 138, 12);
+    --color-green: rgb(68, 170, 68);
+    --color-paragraphs: darkgray;
+    
+
+
+    --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    --font-size-x-small:  0.875rem;
+    --font-size-small: 1.0rem;
+    --font-size-medium: 1.2rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+    --line-height-small: 1.2;
+    --line-height-base: 1.5;
+    --line-height-big: 1.8;
+
+ 
+    --nav-item-font-family: var(--font-family-title);
+    --nav-item-font-weight: var(--font-weight-bold);
+    --nav-item-font-size: var(--font-size-medium);
+    --nav-item-letter-spacing: 0.04rem;
+    --nav-item-margin: 0 0 3rem 0;
+    --nav-item-link-hover: var(--color-white);
+
+
+    --button-display: inline-block;
+      --button-padding: 1.0rem 2rem;
+      --button-border: 0.2rem solid var(--color-secondary);
+      --button-border-radius: 20px;
+      --button-color: var(--color-green);
+      --button-text-decoration: none;
+      --button-font-size: var(--font-size-medium);
+      --button-font-weight: var(--font-weight-bold);
+      --button-hover-color: var(--color-white);
+      --button-hover-text-decoration: none;
+      --button-hover-background: var(--color-orange);
+      
+    --header-height: 400px;
+    --footer-height: 430px;
+
+    --footeer-margin-top: 4rem;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hero-button{
+    margin-top: 50px;
+}
+
+.hero-button a {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.button {
+    background-color: var(--color-green);
+    padding: var(--button-padding);
+    border-radius: var(--button-border-radius);
+    
+}
+
+.button:hover {
+    color: var(--button-hover-color);
+    text-decoration: var(--button-hover-text-decoration);
+    background: var(--button-hover-background);
+    transition-duration: var(--transition-duration);
+}
+
+body{
+    color: var(--text-color);
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-base);
+    max-height: 100%;
+}
+
+.logo-span{
+    color: rgb(206, 138, 12);
+}
+
+.nav-link {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-title);
+    font-weight: var(--font-weight-bold);
+}
+
+
+a:visited {
+    font-style: italic;
+}
+
+a:hover {
+    text-decoration: underline;
+    
+}
+
+/* a:active {
+    background-color: var(--color-orange);
+} */
+
+
+.header{
+    height: var(--header-height);
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+.container{
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.logo{
+    margin-top: 8px;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-medium);
+}
+
+.logo a{
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.nav {
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.nav .nav-item {
+    padding: 10px;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.aside-container{
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 70px;
+}
+
+.aside-left, .aside-right {
+    width: 45%;
+    padding: 10px;
+}
+
+.aside-right img {
+    width: 450px;
+    height: 250px;
+}
+.aside-left {
+    font-size: var(--font-size-medium);
+}
+
+.aside-left p {
+    font-size: var(--font-size-x-small);
+
+}
+
+
+.heading{
+    margin-top: 2rem;
+}
+
+.paragraphs{
+    color: var(--color-paragraphs);
+    font-size: var(--font-size-x-small);
+    
+}
+
+.card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 1.5rem;
+}
+
+.card {
+    width: calc(20% - 10px); /* Adjust card width and margin */
+    margin-bottom: 20px;
+    /* background-color: #f5f5f5; */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    padding: 20px;
+}
+
+.card:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.view-recipe:hover {
+    cursor: pointer;
+}
+
+.para {
+    display: flex;
+    position: relative;
+}
+
+.seeAll a {
+    color: var(--color-paragraphs);
+    text-decoration: none;
+    position: absolute;
+    right: 5rem;
+    top: 2rem;
+}
+
+.seeAll a:hover {
+    text-decoration: underline;
+}
+
+
+.footer {
+    margin-top: var(--footeer-margin-top);
+    height: var(--footer-height);
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.footer-right {
+    margin-top: 4rem;
+}
+
+.footer-left {
+    margin-top: 3.5rem;
+}
+
+.footer-left {
+    width: 45%;
+} 
+
+.footer-left p {
+    margin-top: 1rem;
+}
+
+.newsletter-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.newsletter-form input[type="email"]::placeholder {
+    color: #999; 
+}
+
+.newsletter-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: var(--color-green);
+    color: var(--color-white); /* Text color */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* .newsletter-form button:hover {
+    background-color: var(--color-orange); 
+    color: #fff; 
+} */
+
+.footer-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem; 
+}
+
+.menu {
+    width: 30%;
+}
+
+.help {
+    width: 40%;
+    margin-left: 1rem;
+}
+
+.social {
+    width: 30%;
+    margin-left: 2rem;
+}
+
+.menu-list, .help-list, .social-list {
+    list-style: none;
+    color: var(--color-paragraphs);
+}
+
+.footer-nav-links {
+    color: var(--color-paragraphs);
+    text-decoration: none;
+}
+
+.borderplate {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.borderplate a{
+    color: var(--color-orange);
+    text-decoration: none;
+}
+
+
+.recipe {
+   margin-top: 5rem;
+    border: 1px solid #dededd;
+}
+
+.recipehome{
+    margin-top: 1.5rem;
+}
+
+.recipehome a{
+    text-decoration: none;
+    color: #090909;
+    font-weight: var(--font-weight-bold);
+}
+
+.ri-arrow-left-line {
+    color: red;
+}
+
+.recipe-text {
+    margin-left: 5px;
+}
+
+
+
+
+
