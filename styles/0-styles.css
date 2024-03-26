@@ -119,9 +119,9 @@ a:hover {
     
 }
 
-/* a:active {
-    background-color: var(--color-orange);
-} */
+.nav-link:active {
+    color: var(--color-orange);
+}
 
 
 .header{
@@ -136,7 +136,6 @@ a:hover {
 }
 
 .logo{
-    margin-top: 8px;
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-medium);
 }
@@ -150,8 +149,7 @@ a:hover {
     list-style-type: none;
     text-align: center;
     display: flex;
-    justify-content: space-between;
-    text-align: center;
+    justify-content: center;
 
 }
 
@@ -161,8 +159,37 @@ a:hover {
 
 .nav-container{
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
+
+.navbar-menu {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.search-icon {
+    position: relative;
+    display: inline-block;
+}
+
+.search-bar {
+    position: absolute;
+    right: 0;
+    transition: width 0.5s ease;
+    width: 0;
+    height: 20px;
+    border: none;
+    padding: 0;
+    outline: none;
+    opacity: 0;
+}
+
+.search-icon i {
+    cursor: pointer;
+}
+
 
 
 .aside-container{
@@ -208,12 +235,10 @@ a:hover {
 }
 
 .card {
-    width: calc(20% - 10px); /* Adjust card width and margin */
+    width: calc(20% - 10px); 
     margin-bottom: 20px;
-    /* background-color: #f5f5f5; */
     border: 1px solid #ddd;
     border-radius: 5px;
-    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
     padding: 20px;
 }
 
@@ -227,8 +252,22 @@ a:hover {
     height: auto;
 }
 
+.view-recipe {
+    color: var(--color-white);
+    text-decoration: none;
+    background-color: var(--color-green);
+    padding: 0.5rem 1rem;
+    margin-top: 1.0rem;
+    border-radius: 0.5rem;
+    border: none;
+
+}
+
+
 .view-recipe:hover {
     cursor: pointer;
+    text-decoration: none;
+    
 }
 
 .para {
