@@ -74,13 +74,17 @@ document.addEventListener('DOMContentLoaded', function() {
                         }
                     }
                     document.getElementById('recipeDetailContainer').innerHTML = `
-                        <h2>${recipe.strMeal}</h2>
-                        <img src="${recipe.strMealThumb}" alt="${recipe.strMeal}" style="max-width: 100%; height: auto;">
-                        <p><strong>Category:</strong> ${recipe.strCategory}</p>
-                        <p><strong>Area:</strong> ${recipe.strArea}</p>
-                        <h3>Ingredients</h3>
+                    <div class="detail-card">
+                        <img src="${recipe.strMealThumb}" alt="${recipe.strMeal}" class='detail-img'>
+                        <h2 class='detail-name'>${recipe.strMeal}</h2>
+                        <p><strong>Link to watch video:</strong> <a href="${recipe.strYoutube}" target="_blank">${recipe.strYoutube}</a></p>
+                        <p class='card-area'><strong>Area:</strong> ${recipe.strArea}</p>
+                        <h3 class='detail-ingredients'>Ingredients:</h3>
                         <ul>${ingredients}</ul>
-                        <p><strong>Instructions:</strong> ${recipe.strInstructions}</p>
+                        <h3 class='detail-instructions'>Instructions:</h3>
+                        <p>${recipe.strInstructions}</p>
+                    </div>
+
                         
                     `;
                 } else {
