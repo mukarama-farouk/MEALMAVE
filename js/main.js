@@ -206,27 +206,22 @@ function searchMeal() {
 
 }
 
+
+// JS for when submitting a message
 document.addEventListener('DOMContentLoaded', function() {
-    // Get the contact form container element
     const contactFormContainer = document.getElementById('contactFormContainer');
-
-    // Get the "Get in touch" button element
     const getInTouchButton = document.getElementById('contact-footer-button');
+    const submitButton = document.getElementById('submitButton');
 
-    // Add event listener to the "Get in touch" button
     getInTouchButton.addEventListener('click', function(event) {
-        // Prevent the default behavior of the button click event
         event.preventDefault();
         
-        // Check if the form container is currently hidden
         if (contactFormContainer.style.display === 'none') {
-            // Display the form container
             contactFormContainer.style.display = 'block';
         } else {
-            // Hide the form container
             contactFormContainer.style.display = 'none';
         }
     });
 
-    // Other code...
+
 });

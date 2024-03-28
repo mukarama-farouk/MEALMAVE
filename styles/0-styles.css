@@ -427,9 +427,11 @@ a:hover {
 
 .contact-form input,
 .contact-form textarea {
-    width: 100%;
+    width: 400px;
+    display: block;
     padding: 10px;
     margin-bottom: 10px;
+    margin: 10px auto;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -441,11 +443,12 @@ a:hover {
 .contact-form button {
     font-weight: var(--font-weight-bold);
     color: var(--color-white);
-    width: 20%;
     border: none;
     transition: background-color 0.3s ease;
     display: inline-block;
     font-size: var(--font-size-small);
+    margin-top: 2rem;
+    cursor: pointer;
 }
 
 
