@@ -415,18 +415,21 @@ a:hover {
     align-items: center;
     flex-direction: column;
     margin-top: 3rem;
-    opacity: 0;
     transition: opacity 0.3s ease;
     text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.form-container {
-    opacity: 1;
+.contact-form {
+    width: 100%;
+    display: block;
+    padding: 3rem;
 }
 
 .contact-form input,
 .contact-form textarea {
-    width: 80%;
+    /* width: 300px; */
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
