@@ -422,14 +422,12 @@ a:hover {
 }
 
 .contact-form {
-    width: 100%;
-    display: block;
     padding: 3rem;
 }
 
 .contact-form input,
 .contact-form textarea {
-    /* width: 300px; */
+    width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
