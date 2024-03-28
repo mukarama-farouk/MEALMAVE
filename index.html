@@ -6,6 +6,7 @@
     <title>MealMave</title>
     <link rel="icon" type="image/png" href="./images/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles/0-styles.css">
 
 </head>
@@ -26,7 +27,7 @@
                             <a href="#" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#Recipes" class="nav-link">Recipes</a>
+                            <a href="#Recipes" class="nav-link" id="recipes-tab">Recipes</a>
                         </li>
                         <li class="nav-item">
                             <a href="#Articles" class="nav-link">Articles</a>
@@ -34,11 +35,14 @@
                         <li class="nav-item">
                             <a href="#about" class="nav-link">About Us</a>
                         </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
                     </ul>
                 </nav>
                 <div class="search-icon">
-                    <i class="fas fa-search" onclick="toggleSearchBar()"></i>
                     <input type="text" id="searchBar" class="search-bar" placeholder="Search...">
+                    <i class="fas fa-search" onclick="searchMeal()"></i>
                 </div>
                 
             </div>
@@ -47,7 +51,7 @@
                     <h1>The Easiest Way To Make Your Favourite Meals</h1>
                     <p>Discover a wide variety of recipes. Helps you to find easiest ways to cook</p>
                     <div class="hero-button">
-                        <a href="#" class="button" >Explore Recipes</a>
+                        <a href="/pages/recipes.html" class="button" >Explore Recipes</a>
                     </div>
                 </aside>
                 <aside class="aside-right">
@@ -71,13 +75,99 @@
                     <div class="seeAll">
                         <a href="" id="see-more">See all</a>
                     </div>
-           </div>
-                <div  class="card-container" id="RecipeContainer" >      
-                </div> 
+                </div>
+                <div  class="card-container" id="RecipeContainer" ></div> 
             </div>
             
-            
         </section>
+
+        <!-- Article Section -->
+        <section class="article-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Cooking Tips for Beginners</h2>
+                    <p class="section-tagline">Published on: March 25, 2024</p>
+                </div>
+                <div class="article-content">
+                    <p>Welcome to the world of cooking! Whether you're just starting out or looking to refine your kitchen skills, these essential tips will set you on the right path.</p>
+            
+                    <!-- Tip 1 -->
+                    <h3>1. Read Recipes Thoroughly Before Starting</h3>
+                    <p>Understanding the flow of the recipe can help prevent any surprises. Make sure you have all the ingredients and equipment needed.</p>
+            
+                    <!-- Tip 2 -->
+                    <h3>2. Keep Your Workspace Organized</h3>
+                    <p>Mise en place, or everything in its place, is a professional chef's mantra. Measure out your ingredients ahead of time and keep your workspace tidy to streamline your cooking process.</p>
+            
+                    <!-- Tip 3 -->
+                    <h3>3. Learn to Use Knives Properly</h3>
+                    <p>A sharp knife is safer than a dull one, and learning how to chop, slice, and dice efficiently can save you a lot of time.</p>
+            
+                    <!-- Tip 4 -->
+                    <h3>4. Understand Heat Management</h3>
+                    <p>Getting to know your stove or oven's peculiarities can help you prevent overcooked meals. Remember, you can always add more heat, but you can't take it away.</p>
+            
+                    <!-- Tip 5 -->
+                    <h3>5. Taste As You Go</h3>
+                    <p>Seasoning your food well is the key to delicious meals. Tasting as you cook ensures your dish turns out just right.</p>
+                </div>
+                <footer class="article-footer">
+                <p>Happy cooking!</p>
+                </footer>
+            </div>
+        </section>
+
+        <!-- ABout Us Section -->
+        
+        <section class="about-us-section">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">About Us</h2>
+                    <p class="section-tagline">Everything about us</p>
+                </header>
+                <div class="about-us-content">
+                    <div class="about-us-image">
+                        <img src="images/chef-about us.jpg" alt="About Us">
+                    </div>
+                    <div class="about-us-text">
+                        <h2>About MealMaven</h2>
+                        <p>At MealMaven, our mission is to inspire and empower individuals to explore the joy of cooking and the beauty of sharing meals. Founded in 2024, we believe that cooking should be accessible to everyone, regardless of skill level.</p>
+                        <p>From exotic cuisines to comforting classics, our platform offers a diverse collection of recipes, cooking tips, and culinary inspiration. Join us on this delicious journey, and let's make every meal a celebration!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+
+        <section class="contact-us-section">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">Contact Us</h2>
+                    <p class="section-tagline">We would love to hear from you</p>
+                </header>
+                <div class="contact-us-content">
+                    <div class="contact-us-text">
+                        <p>We're here to assist you in any way we can. Whether you have questions about our services, want to collaborate, or simply say hello, feel free to reach out to us!</p>
+                        <p>You can reach us via email, phone, or social media. Alternatively, use the form below to send us a message:</p>
+                    </div>
+                    <div class="section-footer">
+                        <a href="#" class=" button contact-footer-button" id="contact-footer-button">Get in touch</a>
+                      </div>
+                </div>
+
+                <div id="contactFormContainer" class="form-container show">
+                    <form id="contactForm" class='contact-form'>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+                        <button type="submit" class="button">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        
     </main>
 
 
@@ -153,7 +243,12 @@
             <strong><a href="#" style="text-decoration: none;">RAMATECH CONSULT</a></strong>
         </div>
     </footer>
-
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="./js/main.js"></script>
+
 </body>
 </html>
