@@ -130,7 +130,7 @@ a:hover {
     color: var(--color-white);
 }
 .container{
-    width: 960px;
+    max-width: 960px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -235,6 +235,8 @@ a:hover {
     
 }
 
+
+/* Card Section */
 .card-container {
         display: flex;
         flex-wrap: wrap;
@@ -249,6 +251,7 @@ a:hover {
     border-radius: 5px;
     padding: 20px;
 }
+
 
 .card:hover{
     cursor: pointer;
@@ -315,6 +318,8 @@ a:hover {
     font-weight: var(--font-weight-bold);
     color: var(--color-orange);
 }
+
+
 
 /* Artcle section */
 .article-section {
