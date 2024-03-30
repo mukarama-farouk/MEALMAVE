@@ -57,6 +57,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -129,10 +130,16 @@ a:hover {
     background-color: var(--color-primary);
     color: var(--color-white);
 }
+   
 .container{
     max-width: 960px;
     margin-right: auto;
     margin-left: auto;
+}
+
+main img {
+    width: 100%;
+    height: auto;
 }
 
 .logo{
@@ -206,6 +213,7 @@ a:hover {
     margin-top: 70px;
 }
 
+
 .aside-left, .aside-right {
     width: 45%;
     padding: 10px;
@@ -238,10 +246,10 @@ a:hover {
 
 /* Card Section */
 .card-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1.5rem;
 }
 
 .card {
@@ -284,7 +292,7 @@ a:hover {
 .view-recipe:hover {
     cursor: pointer;
     text-decoration: none;
-    
+    background-color: var(--color-primary);
 }
 
 .para {
@@ -348,6 +356,19 @@ a:hover {
     font-weight: var(--font-weight-bold);
 }
 
+
+/* Media Queries */
+@media (max-width: 767px) {
+    .article-section {
+        margin-top: 2rem;
+        
+    }
+
+    .article-content {
+        padding: 25px;
+    }
+
+}
 
 /* About Us section */
 
@@ -623,4 +644,12 @@ a:hover {
 .image-container {
     position: relative;
     width: 100%;
+}
+
+
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 100%;
+    }
 }
