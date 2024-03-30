@@ -142,11 +142,6 @@ function fetchAndDisplayRecipeDetail() {
                         <h3 class='detail-instructions'>Instructions:</h3>
                         <p>${recipe.strInstructions}</p>
                     </div>`;
-                    const saveRecipeButton = document.getElementById('saveRecipeButton');
-                    saveRecipeButton.addEventListener('click', () => {
-                        // Implement logic to save the recipe
-                        alert('Recipe saved!');
-                    });
                 } else {
                     console.error('No recipe details found');
                 }
@@ -168,32 +163,27 @@ function getQueryParam(param) {
 
 // JS for when a meal is searched for
 
-// Function to search for a meal
-// Function to search for a meal
 function searchMeal() {
     const searchBar = document.getElementById('searchBar');
     const mealName = searchBar.value.trim();
 
-    // Check if the meal name is empty
     if (mealName === '') {
         alert('Please enter a meal name.');
         return;
     }
 
-    // Construct URL for search endpoint
-    const searchUrl = `https://www.themealdb.com/api/json/v1/1/search.php?s=${mealName}`;
 
     // Fetch meal details based on the entered name
+   
+    const searchUrl = `https://www.themealdb.com/api/json/v1/1/search.php?s=${mealName}`;
+ 
     fetch(searchUrl)
         .then(response => response.json())
         .then(data => {
-            // Check if meals are found
             if (data.meals && data.meals.length > 0) {
-                // Redirect to the recipe detail page of the first meal found
                 const mealId = data.meals[0].idMeal;
                 window.location.href = `pages/recipe_detail.htm?id=${mealId}`;
 
-                // Clear the search bar after searching
                 searchBar.value = '';
             } else {
                 alert('No meal found with that name.');
