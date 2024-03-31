@@ -5,7 +5,7 @@ MealMaven is a web application designed to help users discover and explore a wid
 
 
 ## FEATURES
-- Has a search functionality that searches for available recipes
+- Has a search functionality that searches for available recipes by name
 - Each recipe has a youtube link to further understand the recipe
 - Simple and appealing interface
 - Detailed recipe instructions and ingredient lists.
