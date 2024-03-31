@@ -255,10 +255,6 @@ main img {
         margin-left: auto; 
     }
 
-    /* .aside-container {
-        flex-direction: column;
-        align-items: center;
-    } */
 
 
     .aside-left {
@@ -268,7 +264,7 @@ main img {
     }
     
     .aside-right img {
-        display: none;
+        top: 5rem;
     }
     
     .aside-right-btn {
@@ -360,16 +356,22 @@ main img {
 /* Media Queries for the cards section */
 
 @media screen and (max-width:767px) {
+
+    .card-section {
+        padding: 25px;
+    }
+
     .card-container {
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .card {
         width: calc(28% - 8px);
     }
 
-    .para {
-        margin-left: 10px;
+    .seeAll a {
+        top: 2.5rem;
+        right: 2rem;
     }
 
 }
@@ -469,7 +471,8 @@ main img {
     margin-bottom: 10px;
 }
 
-@media (max-width: 768px) {
+/* Media queries for About-us section */
+@media screen and (max-width: 768px) {
     .about-us-content {
         flex-direction: column;
         text-align: center;
@@ -477,6 +480,10 @@ main img {
 
     .about-us-image img {
         margin-bottom: 20px;
+    }
+
+    .about-us-text {
+        padding: 25px;
     }
 }
 
@@ -539,15 +546,13 @@ main img {
     margin-top: 2rem;
     cursor: pointer;
 }
-
-@media (max-width: 767px) {
-    .contact-us-content {
-        margin-left: 1rem;
+/* Media queries for contact section */
+@media screen and (max-width: 767px) {
+     
+    .contact-us-text{
+        padding: 25px;
     }
 
-    .contact-us-text p {
-      margin-left: 1rem;
-    }
 
     .section-footer {
         margin-top: 1.5rem;
