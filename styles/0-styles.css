@@ -248,25 +248,26 @@ main img {
     
 }
 
+/* Media queries for the header */
 @media screen and (max-width: 767px) {
     .nav-container {
-        flex-direction: column; /* Stack navigation items vertically */
-        align-items: center; /* Center navigation items */
+        flex-direction: column;
+        align-items: center;
     }
 
     .search-icon {
-        right: auto; /* Remove right positioning for search icon */
-        margin-top: 0.5rem; /* Add margin-top for better spacing */
-        
+        right: auto; 
+        margin-top: 0.5rem; 
     }
   
     .search-bar {
-        width: 100%; /* Make search bar full width */
-        margin-right: auto; /* Align search bar to the left */
-        margin-left: auto; /* Align search bar to the right */
+        width: 100%; 
+        margin-right: auto;
+        margin-left: auto; 
     }
 
     .aside-container {
+        margin-left: 1rem;
         margin-bottom: 4rem;
         position: relative;
     }
@@ -296,16 +297,16 @@ main img {
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 1.5rem;
 }
 
 .card {
-    width: calc(20% - 10px); 
+    width: calc(25% - 12px); 
     margin-bottom: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    padding: 20px;
+    padding: 10px;
 }
 
 
@@ -358,6 +359,13 @@ main img {
 
 .seeAll a:hover {
     text-decoration: underline;
+}
+
+
+/* Media Queries for the cards section */
+
+@media screen and (max-width:767px) {
+    
 }
 
 
@@ -527,6 +535,9 @@ main img {
 }
 
 @media (max-width: 767px) {
+    .contact-us-content {
+        margin-left: 1rem;
+    }
 
     .contact-us-text p {
       margin-left: 1rem;
