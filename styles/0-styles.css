@@ -134,7 +134,6 @@ a:hover {
 
 
 .header{
-    height: var(--header-height);
     background-color: var(--color-primary);
     color: var(--color-white);
 }
@@ -189,7 +188,7 @@ main img {
   
   .search-bar {
     width: 200px;
-    padding: 7px 25px 7px 8px; /* Adjust padding to make space for the icon */
+    padding: 7px 25px 7px 8px; 
     border: 1px solid #ccc;
     border-radius: 4px 0 0 4px; 
     outline: none;
@@ -200,15 +199,15 @@ main img {
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    background-color: var(--color-green); /* Set background color for the icon */
+    background-color: var(--color-green);
     color: #fff;
-    padding: 8px; /* Adjust icon padding */
-    border-top-right-radius: 4px; /* Adjust border-radius to match input */
-    border-bottom-right-radius: 4px; /* Adjust border-radius to match input */
+    padding: 8px; 
+    border-top-right-radius: 4px; 
+    border-bottom-right-radius: 4px; 
   }
   
   .fas.fa-search:hover {
-    background-color: var(--color-orange); /* Darken color on hover */
+    background-color: var(--color-orange); 
   }
   
 
@@ -225,8 +224,8 @@ main img {
 }
 
 .aside-right img {
-    width: 100%; 
-    max-width: 100%;
+    width: 100%;
+    height: auto;
 }
 .aside-left {
     font-size: var(--font-size-medium);
@@ -237,16 +236,6 @@ main img {
 
 }
 
-
-.heading{
-    margin-top: 2rem;
-}
-
-.paragraphs{
-    color: var(--color-paragraphs);
-    font-size: var(--font-size-x-small);
-    
-}
 
 /* Media queries for the header */
 @media screen and (max-width: 767px) {
@@ -266,34 +255,40 @@ main img {
         margin-left: auto; 
     }
 
-    .aside-container {
-        margin-left: 1rem;
-        margin-bottom: 4rem;
-        position: relative;
-    }
+    /* .aside-container {
+        flex-direction: column;
+        align-items: center;
+    } */
+
 
     .aside-left {
         font-size: var(--font-size-small);
-        width: calc(45% - 5px); /* Adjust width for 2-column layout */
-        margin-right: 5px; /* Add margin between columns */
+        width: calc(45% - 5px); 
+        margin-right: 5px;
     }
     
     .aside-right img {
-        position: absolute;
-        top: -1rem;
-        width: calc(45% - 5px);
-        right: 5rem;
-
+        display: none;
     }
     
     .aside-right-btn {
         padding: 0.5rem 1rem;
     }
     
+
 }
 
-
 /* Card Section */
+
+.heading{
+    margin-top: 2rem;
+}
+
+.paragraphs{
+    color: var(--color-paragraphs);
+    font-size: var(--font-size-x-small);
+    
+}
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -365,7 +360,18 @@ main img {
 /* Media Queries for the cards section */
 
 @media screen and (max-width:767px) {
-    
+    .card-container {
+        justify-content: space-around;
+    }
+
+    .card {
+        width: calc(28% - 8px);
+    }
+
+    .para {
+        margin-left: 10px;
+    }
+
 }
 
 
@@ -445,13 +451,13 @@ main img {
 
 .about-us-image img {
     width: 100%;
-    max-width: 500px; /* Adjust based on your preference */
+    max-width: 500px; 
     height: auto;
 }
 
 .about-us-text {
-    flex: 1; /* Takes up remaining space */
-    max-width: 600px; /* Adjust based on your preference */
+    flex: 1; 
+    max-width: 600px; 
 }
 
 .about-us-text h2 {
@@ -548,6 +554,7 @@ main img {
     }
 
     .contact-footer-button {
+        width: 100%;
         display: block;
         margin-top: 1rem;
     }
@@ -562,16 +569,13 @@ main img {
 }
 
 .footer-right {
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 
 .footer-left {
     margin-top: 3.5rem;
-}
-
-.footer-left {
     width: 45%;
-} 
+}
 
 .footer-left p {
     margin-top: 1rem;
@@ -584,6 +588,10 @@ main img {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+}
+
+.newsletter-form {
+    margin-top: 1rem;
 }
 
 .newsletter-form input[type="email"]::placeholder {
@@ -642,8 +650,11 @@ main img {
     text-decoration: none;
 }
 
+/* Media Queries for footer */
 @media screen and (max-width: 767px) {
-    .aside-container {
+    .footer .aside-container {
+        display: flex;
+        align-items: center;
         flex-direction: column;
     }
 
@@ -652,19 +663,6 @@ main img {
         margin: 1rem 0; 
     }
 
-    .footer-left {
-        width: 100%;
-        text-align: center;
-    }
-
-    .footer-right {
-        width: 100%;
-        text-align: center;
-    }
-
-    .newsletter-form {
-        margin-top: 1.5rem;
-    }
 }
 
 
@@ -746,10 +744,3 @@ main img {
     width: 100%;
 }
 
-
-
-@media (max-width: 767px) {
-    .container {
-        max-width: 100%;
-    }
-}
