@@ -64,9 +64,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.hero-button{
-    margin-top: 50px;
-}
+
 
 .hero-button a {
     color: var(--color-white);
@@ -100,6 +98,10 @@ body{
     color: rgb(206, 138, 12);
 }
 
+.hero-button{
+    margin-top: 50px;
+}
+
 .nav-link {
     color: var(--color-white);
     text-decoration: none;
@@ -120,6 +122,12 @@ a:hover {
     
 }
 
+.container{
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .nav-link:active {
     color: var(--color-orange);
 }
@@ -131,11 +139,7 @@ a:hover {
     color: var(--color-white);
 }
    
-.container{
-    max-width: 960px;
-    margin-right: auto;
-    margin-left: auto;
-}
+
 
 main img {
     width: 100%;
@@ -176,11 +180,6 @@ main img {
     justify-content: center;
 }
 
-@media screen and (max-width: 767px) {
-    .navbar-menu{
-        display: none;
-    }
-  }
 
 .search-icon {
     position: relative;
@@ -227,8 +226,7 @@ main img {
 
 .aside-right img {
     width: 100%; 
-    max-width: 100%; 
-    height: auto;
+    max-width: 100%;
 }
 .aside-left {
     font-size: var(--font-size-medium);
@@ -247,6 +245,49 @@ main img {
 .paragraphs{
     color: var(--color-paragraphs);
     font-size: var(--font-size-x-small);
+    
+}
+
+@media screen and (max-width: 767px) {
+    .nav-container {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: center; /* Center navigation items */
+    }
+
+    .search-icon {
+        right: auto; /* Remove right positioning for search icon */
+        margin-top: 0.5rem; /* Add margin-top for better spacing */
+        
+    }
+  
+    .search-bar {
+        width: 100%; /* Make search bar full width */
+        margin-right: auto; /* Align search bar to the left */
+        margin-left: auto; /* Align search bar to the right */
+    }
+
+    .aside-container {
+        margin-bottom: 4rem;
+        position: relative;
+    }
+
+    .aside-left {
+        font-size: var(--font-size-small);
+        width: calc(45% - 5px); /* Adjust width for 2-column layout */
+        margin-right: 5px; /* Add margin between columns */
+    }
+    
+    .aside-right img {
+        position: absolute;
+        top: -1rem;
+        width: calc(45% - 5px);
+        right: 5rem;
+
+    }
+    
+    .aside-right-btn {
+        padding: 0.5rem 1rem;
+    }
     
 }
 
