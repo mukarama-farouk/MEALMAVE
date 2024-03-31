@@ -434,7 +434,7 @@ main img {
 
 }
 
-/* About Us section */
+/* Styles for About Us section */
 
 .about-us-section {
     display: flex;
@@ -487,7 +487,7 @@ main img {
     }
 }
 
-/* Contact us */
+/* Styles for Contact us */
 
 .section-footer {
     text-align: center; 
@@ -566,7 +566,7 @@ main img {
 }
 
 
-/* Footer */
+/* Styles for Footer */
 .footer {
     margin-top: var(--footeer-margin-top);
     background-color: var(--color-primary);
@@ -655,8 +655,8 @@ main img {
     text-decoration: none;
 }
 
-/* Media Queries for footer */
-@media screen and (max-width: 767px) {
+    /* Media Queries for footer */
+    @media screen and (max-width: 767px) {
     .footer .aside-container {
         display: flex;
         align-items: center;
@@ -668,7 +668,7 @@ main img {
         margin: 1rem 0; 
     }
 
-}
+    }
 
 
 
@@ -749,3 +749,27 @@ main img {
     width: 100%;
 }
 
+@media screen and (max-width: 767px) {
+    .recipe {
+        margin-top: 3rem; 
+    }
+
+    .recipehome {
+        padding: 25px;
+    }
+
+    .detail-card {
+        margin-top: 1.5rem; 
+        padding: 25px;
+    }
+
+    .save-recipe-btn {
+        position: static;
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    .detail-img {
+        max-height: 300px;
+    }
+}
