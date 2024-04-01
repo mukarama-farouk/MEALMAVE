@@ -255,8 +255,6 @@ main img {
         margin-left: auto; 
     }
 
-
-
     .aside-left {
         font-size: var(--font-size-small);
         width: calc(45% - 5px); 
@@ -268,6 +266,7 @@ main img {
     }
     
     .aside-right-btn {
+        margin-top: 2rem;
         padding: 0.5rem 1rem;
     }
     
@@ -288,7 +287,7 @@ main img {
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 1.5rem;
 }
 
@@ -332,7 +331,7 @@ main img {
 .view-recipe:hover {
     cursor: pointer;
     text-decoration: none;
-    background-color: var(--color-primary);
+    background-color: var(--color-orange);
 }
 
 .para {
@@ -489,12 +488,12 @@ main img {
 
 /* Styles for Contact us */
 
-.section-footer {
+.contact-us-footer {
     text-align: center; 
     margin-top: 3rem;
 }
 
-.section-footer a {
+.contact-us-footer a {
     text-decoration: none;
     color: var(--color-white);
     font-weight: var(--font-weight-bold);
