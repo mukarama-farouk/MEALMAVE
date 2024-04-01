@@ -42,6 +42,13 @@ To run MealMaven locally, follow the following steps
 You are welcomed to collaborate to the MealMaven project.If you have suggestions to improve this project, please feel free to make a pull request or open an issue.
 
 
+## Reach me on 
+- [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue)](https://www.linkedin.com/in/mukaramatu-umar-farouk-5764931a0/)
+- [![Follow me on Twitter](https://img.shields.io/badge/Twitter-green)](https://twitter.com/MukaramahF)
+- [![Email Me](https://img.shields.io/badge/Email-red)](mailto:faroukmukarama@gmail.com)
+
+
+
 ## License
 This project is open source and available under the [MIT LICENSE](https://opensource.org/license/mit)
 
